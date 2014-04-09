@@ -1,0 +1,5 @@
+upstream prod-backends {
+<% @backends.each do |backend| -%>
+server <%=backend %>;
+<% end -%>
+}
